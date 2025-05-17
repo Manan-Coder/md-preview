@@ -13,7 +13,11 @@
     "@tailwindcss/postcss": "^4.1.7",
     "@tailwindcss/vite": "^4.1.7",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-rough-notation": "^1.0.5",
+    "rough-notation": "^0.5.1",
+    "rough-react-wrapper": "^1.0.2",
+    "roughjs": "^4.6.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",

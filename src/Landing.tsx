@@ -2,17 +2,9 @@ import { RoughNotation } from "react-rough-notation"
 import Navbar from './components/navbar.tsx'
 import AnimatedArrow from "./components/animatedarrow.tsx"
 import Background from "./components/background.tsx"
-import Editor from "react-simple-code-editor"
-import Prism from 'prismjs'
-import 'prismjs/components/prism-clike'
-import 'prismjs/components/prism-javascript'
-import 'prismjs/themes/prism.css'
-import React from "react"
-
+import Input from "./components/input.tsx"
 function Landing() {
-  const [code, setCode] = React.useState(
-    `function add(a, b) {\n  return a + b;\n}`
-  );
+
 
   return (
     <div className="overflow-x-hidden">
@@ -40,19 +32,9 @@ function Landing() {
         </div>
       </div>
 
-      <div className="bg-white h-screen w-screen">
-        <Editor
-          value={code}
-          onValueChange={code => setCode(code)}
-          highlight={code =>
-            Prism.highlight(code, Prism.languages.javascript, 'javascript')
-          }
-          padding={10}
-          style={{
-            fontFamily: '"Fira code", "Fira Mono", monospace',
-            fontSize: 12,
-          }}
-        />
+      <div className="bg-white h-screen w-screen flex items-center justify-center">
+      <Input />
+      
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ const Navbar = () => {
 
     const rc = rough.svg(svg);
     const width = svg.clientWidth;
-    const height = 80; // update h-[80px] in Tailwind below
+    const height = 60; 
     const gap = 50;
     const seed = 35;
 

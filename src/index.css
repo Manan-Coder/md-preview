@@ -1,7 +1,21 @@
-@import "tailwindcss";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "tailwindcss/typography";
 @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
 .react-simple-code-editor textarea:focus {
   outline: none !important;
   box-shadow: none !important;
+}
+
+@layer components {
+  .prose {
+    @apply max-w-none;
+    @apply prose-headings:font-bold;
+    @apply prose-blockquote:font-normal prose-blockquote:border-l-4 prose-blockquote:border-gray-300 prose-blockquote:pl-4;
+    @apply prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded;
+    @apply prose-pre:bg-gray-100 prose-pre:p-4 prose-pre:rounded;
+  }
 }

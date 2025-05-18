@@ -1,12 +1,10 @@
 import { RoughNotation } from "react-rough-notation"
-import Navbar from './components/navbar.tsx'
-import AnimatedArrow from "./components/animatedarrow.tsx"
-import Background from "./components/background.tsx"
-import Input from "./components/input.tsx"
-import Output from "./components/output.tsx"
+import Navbar from "./components/navbar"
+import AnimatedArrow from "./components/animatedarrow"
+import Background from "./components/background"
+import Input from "./components/input"
+import Output from "./components/output"
 function Landing() {
-
-      const markdown = '# Hi, *Pluto*!'
   return (
     <div className="overflow-x-hidden">
       <Navbar />

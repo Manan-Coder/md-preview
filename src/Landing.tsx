@@ -1,6 +1,6 @@
 import { RoughNotation } from "react-rough-notation"
 import Navbar from './components/navbar.tsx'
-
+import AnimatedArrow from "./components/animatedarrow.tsx"
 function Landing() {
   return (
     <div className="overflow-x-hidden">
@@ -26,7 +26,7 @@ function Landing() {
   </RoughNotation>
 </div>
 
-
+<AnimatedArrow />
   </div>
 </div>
 <div className="bg-white h-screen w-screen">

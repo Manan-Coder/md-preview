@@ -3,9 +3,10 @@ import Navbar from './components/navbar.tsx'
 import AnimatedArrow from "./components/animatedarrow.tsx"
 import Background from "./components/background.tsx"
 import Input from "./components/input.tsx"
+import Output from "./components/output.tsx"
 function Landing() {
 
-
+      const markdown = '# Hi, *Pluto*!'
   return (
     <div className="overflow-x-hidden">
       <Navbar />
@@ -32,9 +33,12 @@ function Landing() {
         </div>
       </div>
 
-      <div className="bg-white h-screen w-screen flex items-center justify-center">
+      <div className="bg-white h-screen w-screen flex items-center justify-center gap-8">
       <Input />
-      
+      <Output />
+
+
+
       </div>
     </div>
   );

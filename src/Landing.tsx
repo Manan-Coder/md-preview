@@ -1,10 +1,12 @@
 import { RoughNotation } from "react-rough-notation"
 import Navbar from './components/navbar.tsx'
 import AnimatedArrow from "./components/animatedarrow.tsx"
+import Background from "./components/background.tsx"
 function Landing() {
   return (
     <div className="overflow-x-hidden">
       <Navbar />
+      <Background />
 <div className="bg-white w-screen h-screen">
   <div className="bg-white h-full w-full flex justify-center items-center">
 

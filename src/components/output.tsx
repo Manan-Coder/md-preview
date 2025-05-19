@@ -4,7 +4,7 @@ import remarkGfm from 'remark-gfm';
 import { useState } from 'react';
 
 const Output = () => {
-  const [markdown, setMarkdown] = useState(`# Heading
+  const [markdown] = useState(`# Heading
 
 *Italic*  
 **Bold**  

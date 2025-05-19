@@ -21,7 +21,7 @@ const Background = () => {
 
     const rc = rough.canvas(canvas);
 
-    for (let i = 0; i < 25; i++) {
+    for (let i = 0; i < 1000; i++) {
       const x = getRandom(0, width);
       const y = getRandom(0, height);
       const size = getRandom(30, 90);

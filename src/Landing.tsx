@@ -10,10 +10,10 @@ function Landing() {
       <Navbar />
       <Background />
 
-      <div className="bg-white w-screen h-screen">
-        <div className="bg-white h-full w-full flex justify-center items-center -mt-40">
+      <div className="w-screen h-screen">
+        <div className="h-full w-full flex justify-center items-center -mt-40">
           <RoughNotation type="box" show={true} padding={20}>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center bg-white">
               <RoughNotation type="underline" show={true} color="#6700c9" strokeWidth={3}>
                 <p
                   style={{ fontFamily: '"Gochi Hand", cursive', marginBottom: '-0.3em' }}
@@ -31,7 +31,7 @@ function Landing() {
         </div>
       </div>
 
-      <div className="bg-white h-screen w-screen flex items-center justify-center gap-8">
+      <div className="h-screen w-screen flex items-center justify-center gap-8">
       <Input />
       <Output />
 

@@ -50,7 +50,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="h-[80px] w-full bg-white relative overflow-hidden">
+    <div className="h-[80px] w-full relative overflow-hidden">
       <svg
         ref={svgRef}
         width="100%"

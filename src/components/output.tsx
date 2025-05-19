@@ -18,7 +18,7 @@ console.log("code block");
 `);
 
   return (
-    <div className="w-full h-full p-4 overflow-auto">
+    <div className="h-[500px] w-[800px] rounded overflow-hidden p-4">
       <article className="markdown-body">
         <Markdown remarkPlugins={[remarkGfm]}>
           {markdown}

@@ -1,18 +1,13 @@
-import { useState } from "react";
-import Markdown from "react-markdown";
-import remarkGfm from "remark-gfm";
+import 'github-markdown-css/github-markdown.css';
+import Markdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import { useState } from 'react';
 
-interface OutputProps {
-  markdown?: string;
-}
+const Output = () => {
+  const [markdown, setMarkdown] = useState(`# Heading
 
-const Output = ({ markdown }: OutputProps) => {
-  const [localMarkdown] = useState(markdown || `# Heading
-
-*Italic*
-
-**Bold**
-
+*Italic*  
+**Bold**  
 ~~Strikethrough~~
 
 > Blockquote
@@ -23,14 +18,14 @@ console.log("code block");
 `);
 
   return (
-    <div className="flex flex-col bg-white text-black h-full w-full rounded overflow-auto p-4 border-2">
-      <article className="prose">
+    <div className="w-full h-full p-4 overflow-auto">
+      <article className="markdown-body">
         <Markdown remarkPlugins={[remarkGfm]}>
-          {markdown || localMarkdown}
+          {markdown}
         </Markdown>
       </article>
     </div>
   );
 };
 
-export default Output;  
+export default Output;
